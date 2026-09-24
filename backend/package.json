@@ -1,18 +1,21 @@
 {
-  "name": "backend",
+  "name": "umuturage-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
+  "description": "Express API for Umuturage-MIS (citizen relocation registration).",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^18.0.3",
     "express": "^4.19.2",
     "pg": "^8.23.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
