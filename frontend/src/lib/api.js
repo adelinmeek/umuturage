@@ -1,7 +1,7 @@
 // Thin fetch wrapper around the Umuturage-MIS Express API.
 // Configure the backend URL with VITE_API_URL (defaults to the local dev server).
 
-const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:4000').replace(/\/$/, '')
+const API_URL = (import.meta.env.Config || 'http://localhost:4000').replace(/\/$/, '')
 const TOKEN_KEY = 'umuturage.token'
 
 export class ApiError extends Error {
